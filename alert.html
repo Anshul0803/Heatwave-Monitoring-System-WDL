@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thermoscope | Alerts</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="topbar"><div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">☀</span><span>THERMOSCOPE<small>Heatwave Intelligence</small></span></a>
+      <button class="menu" id="menuBtn">☰</button>
+      <nav class="navlinks"><a href="index.html" class="">Overview</a><a href="alert.html" class="active">Alerts</a><a href="hotspot-map.html" class="">Hotspots</a><a href="forecast.html" class="">Forecast</a><a href="analysis.html" class="">Analytics</a><a href="register.html" class="">Register</a><a href="directory.html" class="">Directory</a><a href="sources.html" class="">Sources</a><a href="media.html" class="">Awareness</a><a href="jquery-lab.html">Interactive Tools</a></nav>
+    </div></header><main><section class="page-title"><div class="container"><div class="breadcrumb">THERMOSCOPE / ALERTS</div><h1>Heatwave Alert Center</h1><p>Severity-coded bulletins with clear advisory language and monitoring metadata.</p></div></section>
+<section class="section"><div class="container grid-2">
+ <article class="glass panel"><span class="tag high">Severe bulletin · HW-042</span><h2><mark style="background:rgba(255,159,67,.22);color:#ffd18d;padding:2px 5px;border-radius:5px">Central &amp; Inland Zones</mark></h2>
+ <p><strong>Maximum temperature:</strong> 47<sup>°C</sup> · <strong>Bulletin:</strong> v2.1 · <strong>Issued:</strong> 28<sup>th</sup> Sep</p>
+ <p><em>Advisory theme: reduce outdoor exposure, hydrate frequently and check vulnerable groups.</em></p>
+ <p><small>Forecast values are illustrative and subject to revision. <abbr title="Automated Weather Station">AWS</abbr> observations should be checked before operational action.</small></p></article>
+ <aside class="callout glow"><span class="status red">ACTION REQUIRED</span><h2>Severe heat conditions</h2><p>Forecast temperature ≥ 40°C triggers the early-warning workflow used in the lab exercises.</p><a class="btn warn" href="analysis.html">Evaluate risk</a></aside>
+</div></section>
+<section class="section"><div class="container glass panel"><h2>Current bulletins</h2><div class="table-wrap"><table class="data-table"><thead><tr><th>Region</th><th>Station</th><th>Severity</th><th>Valid until</th><th>Status</th></tr></thead><tbody>
+<tr><td>Central</td><td>AWS014</td><td><span class="tag high">Severe</span></td><td>18:00</td><td>Active</td></tr>
+<tr><td>North</td><td>AWS021</td><td><span class="tag watch">Watch</span></td><td>21:00</td><td>Monitoring</td></tr>
+<tr><td>Coastal</td><td>AWS008</td><td><span class="tag normal">Normal</span></td><td>—</td><td>Stable</td></tr>
+</tbody></table></div></div></section></main><footer class="footer"><div class="container footer-grid">
+      <span>THERMOSCOPE · Climate intelligence for heat-aware communities</span>
+      <span>Real-time climate intelligence interface</span>
+    </div></footer><div id="toast" class="toast"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="js/app.js"></script></body></html>

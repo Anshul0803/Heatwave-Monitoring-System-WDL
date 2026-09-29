@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thermoscope | Overview</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="topbar"><div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">☀</span><span>THERMOSCOPE<small>Heatwave Intelligence</small></span></a>
+      <button class="menu" id="menuBtn">☰</button>
+      <nav class="navlinks"><a href="index.html" class="active">Overview</a><a href="alert.html" class="">Alerts</a><a href="hotspot-map.html" class="">Hotspots</a><a href="forecast.html" class="">Forecast</a><a href="analysis.html" class="">Analytics</a><a href="register.html" class="">Register</a><a href="directory.html" class="">Directory</a><a href="sources.html" class="">Sources</a><a href="media.html" class="">Awareness</a><a href="jquery-lab.html">Interactive Tools</a></nav>
+    </div></header><main>
+<section class="hero"><div class="container hero-grid">
+  <div>
+    <span class="eyebrow"><i class="dot"></i> Live climate intelligence</span>
+    <h1>See the heat.<br><span style="color:var(--cyan)">Act before it peaks.</span></h1>
+    <p>A redesigned command interface for localized heatwave monitoring, risk analysis and public early-warning operations.</p>
+    <div class="hero-actions"><a class="btn primary" href="analysis.html">Run risk analysis →</a><a class="btn ghost" href="hotspot-map.html">Explore hotspots</a></div>
+  </div>
+  <aside class="glass hero-card">
+    <div><div class="metric-label">Mumbai monitoring cell</div><div class="value">39.2°</div><span class="status">● WATCH · elevated heat</span></div>
+    <div style="display:flex;justify-content:space-between;color:var(--muted);font-size:12px"><span>Humidity 64%</span><span id="liveClock">--:--:--</span></div>
+  </aside>
+</div></section>
+<section class="section"><div class="container">
+<div class="section-head"><div><h2>Operations snapshot</h2><p>Illustrative monitoring values for the climate intelligence portal.</p></div></div>
+<div class="cards">
+ <div class="card"><span class="metric-label">Surface temperature</span><div class="metric">39.2°C</div><div class="metric-note">+2.2°C above local threshold</div></div>
+ <div class="card"><span class="metric-label">Humidity</span><div class="metric">64%</div><div class="metric-note">High heat-stress potential</div></div>
+ <div class="card"><span class="metric-label">Forecast peak</span><div class="metric">41.0°C</div><div class="metric-note">Next 24-hour outlook</div></div>
+ <div class="card"><span class="metric-label">Active alerts</span><div class="metric">07</div><div class="metric-note">Across monitored zones</div></div>
+</div></div></section>
+<section class="section"><div class="container grid-2">
+ <div class="glass panel"><div class="section-head"><div><h2>Temperature profile</h2><p>Sample readings used for temperature trend analysis.</p></div><span class="tag high">3 ≥ 40°C</span></div>
+ <div id="tempBars" class="spark"></div></div>
+ <div class="glass panel"><h2>Early-warning pipeline</h2><div class="timeline">
+  <div class="timeline-item"><span class="time">01</span><div><strong>Observe</strong><p>Collect station temperature, humidity and date.</p></div></div>
+  <div class="timeline-item"><span class="time">02</span><div><strong>Analyze</strong><p>Compare values with thresholds and forecast conditions.</p></div></div>
+  <div class="timeline-item"><span class="time">03</span><div><strong>Warn</strong><p>Generate severity and early-warning recommendations.</p></div></div>
+ </div></div>
+</div></section>
+<section class="section"><div class="container"><div class="callout glow"><span class="status red">HIGH ATTENTION</span><h2 style="margin:12px 0 4px">Central sector forecast crosses 40°C</h2><p style="margin:0;color:#b8c5d0">Use the risk engine to evaluate temperature, humidity and forecast together before issuing an advisory.</p></div></div></section>
+</main><footer class="footer"><div class="container footer-grid">
+      <span>THERMOSCOPE · Climate intelligence for heat-aware communities</span>
+      <span>Real-time climate intelligence interface</span>
+    </div></footer><div id="toast" class="toast"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="js/app.js"></script></body></html>

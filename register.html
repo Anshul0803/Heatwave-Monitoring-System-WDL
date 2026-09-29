@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thermoscope | Registration</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="topbar"><div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">☀</span><span>THERMOSCOPE<small>Heatwave Intelligence</small></span></a>
+      <button class="menu" id="menuBtn">☰</button>
+      <nav class="navlinks"><a href="index.html" class="">Overview</a><a href="alert.html" class="">Alerts</a><a href="hotspot-map.html" class="">Hotspots</a><a href="forecast.html" class="">Forecast</a><a href="analysis.html" class="">Analytics</a><a href="register.html" class="active">Register</a><a href="directory.html" class="">Directory</a><a href="sources.html" class="">Sources</a><a href="media.html" class="">Awareness</a><a href="jquery-lab.html">Interactive Tools</a></nav>
+    </div></header><main><section class="page-title"><div class="container"><div class="breadcrumb">THERMOSCOPE / REGISTER</div><h1>Climate Intelligence Registration</h1><p>A redesigned form combining the interactive logic registration and validation requirements from the laboratory tasks.</p></div></section>
+<section class="section"><div class="container grid-2">
+<div class="glass panel"><form id="registrationForm" novalidate>
+<fieldset><legend>User information</legend><div class="form-grid">
+<div class="field"><label>User name</label><input id="regName" placeholder="Rahul Sharma"><span id="regNameError" class="error"></span></div>
+<div class="field"><label>Mobile number</label><input id="regMobile" maxlength="10" placeholder="9876543210"><span id="regMobileError" class="error"></span></div>
+<div class="field"><label>Email</label><input id="regEmail" type="email" placeholder="name@example.com"><span id="regEmailError" class="error"></span></div>
+<div class="field"><label>User ID</label><input id="regUserId" placeholder="CLM-1234"><span id="regUserIdError" class="error"></span></div>
+<div class="field"><label>Location / City</label><input id="regLocation" placeholder="Mumbai"><span id="regLocationError" class="error"></span></div>
+<div class="field"><label>PIN / Postal code</label><input id="regPin" maxlength="6" placeholder="400077"><span id="regPinError" class="error"></span></div>
+</div></fieldset>
+<fieldset><legend>Alert preferences</legend><div class="form-grid"><div class="field"><label>User category</label><select id="regCategory"><option value="">Choose category</option><option>General Public</option><option>Senior Citizen</option><option>Student</option><option>Outdoor Worker</option><option>Healthcare Worker</option><option>Government / Disaster Management</option><option>Other</option></select><span id="regCategoryError" class="error"></span></div>
+<div class="field"><label>Preferred alert channel</label><select id="regChannel"><option value="">Choose channel</option><option>SMS</option><option>Email</option><option>Mobile App</option></select><span id="regChannelError" class="error"></span></div>
+<div class="field"><label>Age group</label><select><option>18–29</option><option>30–59</option><option>60+</option></select></div><div class="field"><label>Registration date</label><input id="regDate" type="date"><span id="regDateError" class="error"></span></div></div></fieldset>
+<button class="btn primary" type="submit">Validate & register</button></form><div id="regSuccess" class="success" style="display:none"></div></div>
+<aside class="glass panel"><span class="tag info">Validation rules</span><h2>Client-side protection</h2><div class="feature-list"><div class="feature"><i>01</i><div><strong>Regex validation</strong><p>Name, email, mobile, CLM-1234 user ID and PIN patterns.</p></div></div><div class="feature"><i>02</i><div><strong>Field-level errors</strong><p>Invalid fields are highlighted and explained beside the input.</p></div></div><div class="feature"><i>03</i><div><strong>Date control</strong><p>Registration date cannot be empty or in the future.</p></div></div></div></aside></div></section>
+<section class="section"><div class="container glass panel"><span class="tag info">Monitoring entry</span><h2>Observer Monitoring Entry</h2><form id="monitorForm"><div class="form-grid">
+<div class="field"><label>Observer name</label><input id="mName"><span id="mNameError" class="error monitor-error"></span></div><div class="field"><label>AWS Station ID</label><input id="mStation" placeholder="AWS001"><span id="mStationError" class="error monitor-error"></span></div>
+<div class="field"><label>Email</label><input id="mEmail"><span id="mEmailError" class="error monitor-error"></span></div><div class="field"><label>Mobile</label><input id="mMobile" maxlength="10"><span id="mMobileError" class="error monitor-error"></span></div>
+<div class="field"><label>Maximum temperature °C</label><input id="mTemp" type="number"><span id="mTempError" class="error monitor-error"></span></div><div class="field"><label>Humidity %</label><input id="mHumidity" type="number"><span id="mHumidityError" class="error monitor-error"></span></div>
+<div class="field"><label>Observation date</label><input id="mDate" type="date"><span id="mDateError" class="error monitor-error"></span></div></div><button class="btn" type="submit">Validate observation</button></form><div id="monitorSuccess" class="success" style="display:none"></div></div></section></main><footer class="footer"><div class="container footer-grid">
+      <span>THERMOSCOPE · Climate intelligence for heat-aware communities</span>
+      <span>Real-time climate intelligence interface</span>
+    </div></footer><div id="toast" class="toast"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="js/app.js"></script></body></html>

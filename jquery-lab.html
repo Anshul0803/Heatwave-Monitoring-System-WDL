@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thermoscope | Interactive Tools</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="topbar"><div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">☀</span><span>THERMOSCOPE<small>Heatwave Intelligence</small></span></a>
+      <button class="menu" id="menuBtn">☰</button>
+      <nav class="navlinks"><a href="index.html" class="">Overview</a><a href="alert.html" class="">Alerts</a><a href="hotspot-map.html" class="">Hotspots</a><a href="forecast.html" class="">Forecast</a><a href="analysis.html" class="">Analytics</a><a href="register.html" class="">Register</a><a href="directory.html" class="">Directory</a><a href="sources.html" class="">Sources</a><a href="media.html" class="">Awareness</a><a href="jquery-lab.html">Interactive Tools</a></nav>
+    </div></header><main><section class="page-title"><div class="container"><div class="breadcrumb">THERMOSCOPE / INTERACTIVE TOOLS</div><h1>smooth interactions Interaction Lab</h1><p>A small visible demonstration that the portal uses smooth interactions for DOM manipulation and event handling.</p></div></section>
+<section class="section"><div class="container glass panel"><div class="grid-2"><div><h2>Monitoring simulator</h2><p>Try an alert state change or add a fresh station reading.</p><button class="btn warn" id="jqAlert">Toggle alert state</button> <button class="btn" id="jqAdd">Add reading</button></div><div id="jqBox" class="callout"><strong>System state: Monitoring</strong><p id="jqReadings">Readings loaded: 10</p></div></div></div></section>
+<script>
+$(function(){
+ $("#jqAlert").on("click",function(){ $("#jqBox").toggleClass("glow"); $("#jqBox strong").text($("#jqBox").hasClass("glow")?"System state: ALERT":"System state: Monitoring"); });
+ $("#jqAdd").on("click",function(){ let n=parseInt($("#jqReadings").text().match(/\d+/)[0])+1; $("#jqReadings").text("Readings loaded: "+n); });
+});
+</script></main><footer class="footer"><div class="container footer-grid">
+      <span>THERMOSCOPE · Climate intelligence for heat-aware communities</span>
+      <span>Real-time climate intelligence interface</span>
+    </div></footer><div id="toast" class="toast"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="js/app.js"></script></body></html>
